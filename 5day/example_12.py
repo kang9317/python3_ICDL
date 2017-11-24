@@ -24,3 +24,4 @@ with open('poeple.pickle', 'rb') as f:
     loaded_people = pickle.load(f)
     
 pprint(loaded_people)
+print(loaded_people)
