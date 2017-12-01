@@ -1,0 +1,30 @@
+import time
+t = time.localtime()
+print(t)
+print('')
+print(t[0])
+print('')
+print(t.tm_year)
+
+print('')
+print(t.tm_year, '년', t.tm_mon, \
+      '월', t.tm_mday,'일')
+print('')
+print(time.time())
+print('')
+print(time.gmtime())
+print('')
+print(time.asctime(t))
+print('')
+seconds = time.mktime(t)
+
+print(seconds)
+print('')
+str = time.strftime('%Y-%m-%d')
+print(str)
+print('')
+
+print(time.strptime(str,'%Y-%m-%d'))
+print('')
+str = time.strftime('%H시 %M분 %S초')
+print(str)
